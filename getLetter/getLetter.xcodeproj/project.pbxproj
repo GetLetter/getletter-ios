@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47EDD6571FE9DA7000E13EDC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDD6561FE9DA7000E13EDC /* PageViewController.swift */; };
 		47F20CFA1FE9C35300AF10CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20CF91FE9C35300AF10CE /* AppDelegate.swift */; };
 		47F20CFC1FE9C35300AF10CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20CFB1FE9C35300AF10CE /* ViewController.swift */; };
 		47F20CFF1FE9C35300AF10CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F20CFD1FE9C35300AF10CE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47EDD6561FE9DA7000E13EDC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		47F20CF61FE9C35300AF10CE /* getLetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getLetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F20CF91FE9C35300AF10CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F20CFB1FE9C35300AF10CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				47F20CF91FE9C35300AF10CE /* AppDelegate.swift */,
 				47F20CFB1FE9C35300AF10CE /* ViewController.swift */,
 				47F20CFD1FE9C35300AF10CE /* Main.storyboard */,
+				47EDD6561FE9DA7000E13EDC /* PageViewController.swift */,
 				47F20D001FE9C35300AF10CE /* Assets.xcassets */,
 				47F20D021FE9C35300AF10CE /* LaunchScreen.storyboard */,
 				47F20D051FE9C35300AF10CE /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EDD6571FE9DA7000E13EDC /* PageViewController.swift in Sources */,
 				47F20CFC1FE9C35300AF10CE /* ViewController.swift in Sources */,
 				47F20CFA1FE9C35300AF10CE /* AppDelegate.swift in Sources */,
 			);
