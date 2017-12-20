@@ -16,6 +16,7 @@
 		47F20D041FE9C35300AF10CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F20D021FE9C35300AF10CE /* LaunchScreen.storyboard */; };
 		47F701EF1FEA7220007198FF /* SendLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F701EE1FEA7220007198FF /* SendLetterViewController.swift */; };
 		47F701F31FEA9761007198FF /* BasicFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F701F21FEA9761007198FF /* BasicFlowViewController.swift */; };
+		47F701F51FEAA599007198FF /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F701F41FEAA599007198FF /* EditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		47F20D051FE9C35300AF10CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F701EE1FEA7220007198FF /* SendLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLetterViewController.swift; sourceTree = "<group>"; };
 		47F701F21FEA9761007198FF /* BasicFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFlowViewController.swift; sourceTree = "<group>"; };
+		47F701F41FEAA599007198FF /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				47F20CFD1FE9C35300AF10CE /* Main.storyboard */,
 				47F701F21FEA9761007198FF /* BasicFlowViewController.swift */,
 				47F701EE1FEA7220007198FF /* SendLetterViewController.swift */,
+				47F701F41FEAA599007198FF /* EditorViewController.swift */,
 				47411B171FEA62E000D1201D /* LoginViewController.swift */,
 				47EDD6561FE9DA7000E13EDC /* PageViewController.swift */,
 				47F20D001FE9C35300AF10CE /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				47F20CFC1FE9C35300AF10CE /* ViewController.swift in Sources */,
 				47F701EF1FEA7220007198FF /* SendLetterViewController.swift in Sources */,
 				47F20CFA1FE9C35300AF10CE /* AppDelegate.swift in Sources */,
+				47F701F51FEAA599007198FF /* EditorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

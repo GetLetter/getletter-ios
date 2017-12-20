@@ -1,5 +1,5 @@
 //
-//  BasicFlowViewController.swift
+//  EditorViewController.swift
 //  getLetter
 //
 //  Created by Corentin Marzin on 20/12/2017.
@@ -8,12 +8,24 @@
 
 import UIKit
 
-class BasicFlowViewController: UIViewController {
-
+class EditorViewController: UIViewController {
+    
+    @IBOutlet weak var bottomTextField: UITextField!
+    @IBOutlet var UserDragged: UIPanGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(self.userDragged(_:)))
+        bottomTextField.addGestureRecognizer(gesture)
+        bottomTextField.isUserInteractionEnabled = true
 
-        // Do any additional setup after loading the view.
+    }
+    
+    @objc func userDragged(_ gesture: UIPanGestureRecognizer){
+        let loc = gesture.location(in: self.view)
+        self.bottomTextField.center = loc
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,10 +33,8 @@ class BasicFlowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - Back Button for all view
-    
     @IBAction func BackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+          self.navigationController?.popViewController(animated: true)
     }
     
     /*
