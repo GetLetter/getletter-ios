@@ -903,6 +903,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Timeline6" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-S9-lYq">
+                                <rect key="frame" x="16" y="567" width="343" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -964,5 +968,6 @@
         <image name="Timeline3" width="492" height="39"/>
         <image name="Timeline4" width="492" height="39"/>
         <image name="Timeline5" width="492" height="39"/>
+        <image name="Timeline6" width="501" height="39"/>
     </resources>
 </document>
