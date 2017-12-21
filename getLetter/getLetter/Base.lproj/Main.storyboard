@@ -196,6 +196,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="SendDataToFirabase:" destination="WWH-zS-beM" eventType="touchUpInside" id="UxT-jY-CT2"/>
                                     <segue destination="wKC-ON-RR8" kind="show" id="QuR-h9-UsC"/>
                                 </connections>
                             </button>

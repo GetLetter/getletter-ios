@@ -10,6 +10,7 @@
 		2D6D0FE9CEFE0F29B63ED6C9 /* Pods_getLetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DCE8437F083FB68362A0C /* Pods_getLetter.framework */; };
 		47154B201FEBA3F600A39A2A /* ListOfTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47154B1F1FEBA3F600A39A2A /* ListOfTemplateViewController.swift */; };
 		47154B221FEBF94A00A39A2A /* FruitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47154B211FEBF94A00A39A2A /* FruitsTableViewController.swift */; };
+		47154B241FEC324800A39A2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47154B231FEC324800A39A2A /* GoogleService-Info.plist */; };
 		47C585011FEAB7EC0082E85F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C585001FEAB7EC0082E85F /* LoginViewController.swift */; };
 		47C585031FEAB8A80082E85F /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C585021FEAB8A80082E85F /* LoginTableViewController.swift */; };
 		47EDD6571FE9DA7000E13EDC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDD6561FE9DA7000E13EDC /* PageViewController.swift */; };
@@ -27,6 +28,7 @@
 		320DCE8437F083FB68362A0C /* Pods_getLetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getLetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47154B1F1FEBA3F600A39A2A /* ListOfTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTemplateViewController.swift; sourceTree = "<group>"; };
 		47154B211FEBF94A00A39A2A /* FruitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewController.swift; sourceTree = "<group>"; };
+		47154B231FEC324800A39A2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/FIREBASE_cancer/iOS/Prod/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47C585001FEAB7EC0082E85F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		47C585021FEAB8A80082E85F /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		47EDD6561FE9DA7000E13EDC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				47F20D001FE9C35300AF10CE /* Assets.xcassets */,
 				47F20D021FE9C35300AF10CE /* LaunchScreen.storyboard */,
 				47F20D051FE9C35300AF10CE /* Info.plist */,
+				47154B231FEC324800A39A2A /* GoogleService-Info.plist */,
 			);
 			path = getLetter;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F20D041FE9C35300AF10CE /* LaunchScreen.storyboard in Resources */,
+				47154B241FEC324800A39A2A /* GoogleService-Info.plist in Resources */,
 				47F20D011FE9C35300AF10CE /* Assets.xcassets in Resources */,
 				47F20CFF1FE9C35300AF10CE /* Main.storyboard in Resources */,
 			);
@@ -225,11 +229,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-getLetter/Pods-getLetter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,7 +402,7 @@
 				DEVELOPMENT_TEAM = VS98M2B2EJ;
 				INFOPLIST_FILE = getLetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.getLetter;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.getLetterr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +418,7 @@
 				DEVELOPMENT_TEAM = VS98M2B2EJ;
 				INFOPLIST_FILE = getLetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.getLetter;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.getLetterr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
