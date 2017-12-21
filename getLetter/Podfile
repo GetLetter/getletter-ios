@@ -1,0 +1,6 @@
+platform :ios, '11.2.1'
+use_frameworks!
+
+target 'getLetter' do
+  pod 'Alamofire', '~> 4.5'
+end

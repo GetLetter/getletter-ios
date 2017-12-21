@@ -1,0 +1,6 @@
+framework module Pods_getLetter {
+  umbrella header "Pods-getLetter-umbrella.h"
+
+  export *
+  module * { export * }
+}
