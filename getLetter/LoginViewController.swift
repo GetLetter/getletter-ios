@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Gloss
 
 var token: Any!
 
@@ -23,8 +24,25 @@ class LoginViewController: UIViewController {
             
             switch response.result {
             case .success(let data):
-                token = data
-                print("token voila", token)
+                
+                struct RepoOwner: JSONDecodable {
+
+                    let auth_token: String?
+
+                    // MARK: - Deserialization
+
+                    init?(json: JSON) {
+                        self.auth_token = "auth_token" <~~ json
+                    }
+                }
+                
+                guard let repoOwner = RepoOwner(json: data as! JSON) else {
+                    // handle decoding failure here
+                    return
+                }
+                token = repoOwner.auth_token
+                    print("FUCKIN TOKEN", repoOwner.auth_token)
+                
             case .failure:
                 print("not good")
             }
