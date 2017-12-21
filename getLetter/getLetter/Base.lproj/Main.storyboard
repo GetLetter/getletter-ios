@@ -513,6 +513,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Écrivez votre message ici..." translatesAutoresizingMaskIntoConstraints="NO" id="H36-Vz-dWh">
+                                <rect key="frame" x="16" y="111" width="343" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Timeline2" translatesAutoresizingMaskIntoConstraints="NO" id="J2p-8J-ufF">
+                                <rect key="frame" x="16" y="567" width="343" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -525,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhT-1r-qoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3662" y="759"/>
+            <point key="canvasLocation" x="3661.5999999999999" y="757.87106446776613"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="h6f-QK-uJB">
@@ -934,5 +945,6 @@
         <image name="Logo2" width="1627" height="596"/>
         <image name="Pattern" width="375" height="667"/>
         <image name="Timeline1" width="676" height="52"/>
+        <image name="Timeline2" width="656" height="52"/>
     </resources>
 </document>
