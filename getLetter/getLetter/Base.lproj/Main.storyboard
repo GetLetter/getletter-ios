@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dbV-WK-LVA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dbV-WK-LVA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -264,8 +264,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-PC-WRU">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-PC-WRU">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.84313725490196079" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NZl-ff-NaT"/>
@@ -278,8 +278,8 @@
                                     <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="NLg-pf-bJM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-C1-EOD">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-C1-EOD">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
                                 <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="CsH-T5-0VS"/>
@@ -336,35 +336,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVB-mf-Tz1">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="fcS-hO-u3k"/>
-                                    <constraint firstAttribute="height" constant="50" id="pRx-oQ-Uv7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Retour"/>
-                                <connections>
-                                    <action selector="BackButton:" destination="rUe-nk-5xl" eventType="touchUpInside" id="tPR-Bp-bsS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61f-eu-bDG">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="9Xj-id-uIe"/>
-                                    <constraint firstAttribute="height" constant="50" id="R1b-3z-rYj"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XM4-6d-EOz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Continuer"/>
-                                <connections>
-                                    <segue destination="SYp-e7-MxV" kind="show" id="9yF-tL-Z01"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ecrivez  votre message dès à présent !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZVd-sb-ZQp">
                                 <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -375,14 +346,37 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-db-03m">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VTh-Og-oUO"/>
+                                    <constraint firstAttribute="width" constant="100" id="cfQ-yI-mA4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="2I2-xY-T41"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-bx-Rf1">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3Cq-4C-cwW"/>
+                                    <constraint firstAttribute="width" constant="175" id="4ZJ-ta-Biv"/>
+                                    <constraint firstAttribute="height" constant="50" id="yZf-RZ-orl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continuer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DvO-Pd-TT1" firstAttribute="bottom" secondItem="61f-eu-bDG" secondAttribute="bottom" constant="20" id="CQ4-LN-6Va"/>
-                            <constraint firstItem="WVB-mf-Tz1" firstAttribute="leading" secondItem="DvO-Pd-TT1" secondAttribute="leading" constant="16" id="GvW-Yi-L0n"/>
                             <constraint firstItem="ZVd-sb-ZQp" firstAttribute="top" secondItem="DvO-Pd-TT1" secondAttribute="top" id="HNj-f1-85o"/>
-                            <constraint firstItem="61f-eu-bDG" firstAttribute="leading" secondItem="WVB-mf-Tz1" secondAttribute="trailing" constant="20" id="Jmy-sE-9kA"/>
-                            <constraint firstItem="DvO-Pd-TT1" firstAttribute="bottom" secondItem="WVB-mf-Tz1" secondAttribute="bottom" constant="20" id="S1i-Mv-7Ax"/>
+                            <constraint firstItem="H8i-bx-Rf1" firstAttribute="leading" secondItem="X3c-db-03m" secondAttribute="trailing" constant="20" id="PFf-y9-IBh"/>
                             <constraint firstItem="ZVd-sb-ZQp" firstAttribute="leading" secondItem="DvO-Pd-TT1" secondAttribute="leading" constant="16" id="hBm-vb-f3V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DvO-Pd-TT1"/>
@@ -499,35 +493,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlE-b5-udF">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0eq-aF-c6w"/>
-                                    <constraint firstAttribute="width" constant="100" id="UTk-zd-a7W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Retour"/>
-                                <connections>
-                                    <action selector="BackButton:" destination="SYp-e7-MxV" eventType="touchUpInside" id="BD0-hx-Yg9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-ay-MbG">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NuB-X9-8aN"/>
-                                    <constraint firstAttribute="width" constant="175" id="bOO-A9-lUg"/>
-                                    <constraint firstAttribute="height" constant="50" id="cih-tA-b2L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Continuer"/>
-                                <connections>
-                                    <segue destination="1N2-lw-Zmh" kind="show" id="HDY-4b-Owz"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Choississez votre carte de noël !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ekj-IW-VHV">
                                 <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -538,15 +503,38 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46R-kQ-aZU">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Awn-yN-Gtg"/>
+                                    <constraint firstAttribute="width" constant="100" id="WcG-2y-QET"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="Ds4-wz-O5h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9v-Ic-Ec4">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="2zT-Xx-5Qh"/>
+                                    <constraint firstAttribute="width" constant="175" id="54d-qP-bwE"/>
+                                    <constraint firstAttribute="height" constant="50" id="vLL-B0-T5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continuer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v8F-Rl-WNt" firstAttribute="bottom" secondItem="Hok-ay-MbG" secondAttribute="bottom" constant="20" id="KdL-l1-IK0"/>
+                            <constraint firstItem="B9v-Ic-Ec4" firstAttribute="leading" secondItem="46R-kQ-aZU" secondAttribute="trailing" constant="20" id="3RZ-HW-drY"/>
                             <constraint firstItem="Ekj-IW-VHV" firstAttribute="leading" secondItem="v8F-Rl-WNt" secondAttribute="leading" constant="16" id="Ssb-kX-NHI"/>
                             <constraint firstItem="Ekj-IW-VHV" firstAttribute="top" secondItem="v8F-Rl-WNt" secondAttribute="top" id="a5K-2N-Hvl"/>
-                            <constraint firstItem="v8F-Rl-WNt" firstAttribute="bottom" secondItem="LlE-b5-udF" secondAttribute="bottom" constant="20" id="eTG-Bl-wXG"/>
-                            <constraint firstItem="LlE-b5-udF" firstAttribute="leading" secondItem="v8F-Rl-WNt" secondAttribute="leading" constant="16" id="fGb-9U-nJC"/>
-                            <constraint firstItem="Hok-ay-MbG" firstAttribute="leading" secondItem="LlE-b5-udF" secondAttribute="trailing" constant="20" id="uXn-5R-TSP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v8F-Rl-WNt"/>
                     </view>
@@ -563,35 +551,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5R-4A-9MS">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3GC-h1-xam"/>
-                                    <constraint firstAttribute="width" constant="100" id="dPh-MQ-wex"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Retour"/>
-                                <connections>
-                                    <action selector="BackButton:" destination="1N2-lw-Zmh" eventType="touchUpInside" id="6zZ-HC-XfJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIc-JE-Ifx">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LE6-TZ-tYW"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Sii-Wz-l4y"/>
-                                    <constraint firstAttribute="width" constant="175" id="WCb-jL-uYj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Continuer"/>
-                                <connections>
-                                    <segue destination="qzH-D4-mMr" kind="show" id="mIo-F1-TG5"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Personnaliser votre carte de voeux !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5pe-8P-wgt">
                                 <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -618,13 +577,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMm-wX-LEp">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Kux-TI-ZX2"/>
+                                    <constraint firstAttribute="height" constant="50" id="f7h-gz-cPT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="eeh-LG-kPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbk-Zh-nne">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4dJ-FN-D6d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="HKL-UO-WXw"/>
+                                    <constraint firstAttribute="width" constant="175" id="o6Q-Sw-fWx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continuer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VoW-R5-djg" firstAttribute="bottom" secondItem="JIc-JE-Ifx" secondAttribute="bottom" constant="20" id="20k-Ld-2XT"/>
-                            <constraint firstItem="JIc-JE-Ifx" firstAttribute="leading" secondItem="s5R-4A-9MS" secondAttribute="trailing" constant="20" id="6NX-5H-bsA"/>
-                            <constraint firstItem="VoW-R5-djg" firstAttribute="bottom" secondItem="s5R-4A-9MS" secondAttribute="bottom" constant="20" id="TWE-UU-4i6"/>
-                            <constraint firstItem="s5R-4A-9MS" firstAttribute="leading" secondItem="VoW-R5-djg" secondAttribute="leading" constant="16" id="bEb-i2-zMo"/>
+                            <constraint firstItem="gbk-Zh-nne" firstAttribute="leading" secondItem="ZMm-wX-LEp" secondAttribute="trailing" constant="20" id="fQW-AP-PnG"/>
                             <constraint firstItem="5pe-8P-wgt" firstAttribute="top" secondItem="VoW-R5-djg" secondAttribute="top" id="h31-q0-QVD"/>
                             <constraint firstItem="5pe-8P-wgt" firstAttribute="leading" secondItem="VoW-R5-djg" secondAttribute="leading" constant="16" id="zBN-Bk-xKu"/>
                         </constraints>
@@ -648,35 +630,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzo-Wr-beA">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9SF-rH-wM9"/>
-                                    <constraint firstAttribute="height" constant="50" id="oEb-4o-9eg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Retour"/>
-                                <connections>
-                                    <action selector="BackButton:" destination="qzH-D4-mMr" eventType="touchUpInside" id="Yfw-fZ-i8b"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgC-ze-UPw">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9aK-W6-C4a"/>
-                                    <constraint firstAttribute="width" constant="175" id="Hif-T9-nWb"/>
-                                    <constraint firstAttribute="height" constant="50" id="T3D-ea-9vn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Continuer"/>
-                                <connections>
-                                    <segue destination="JJS-xI-jJ2" kind="show" id="6yK-1Z-jzT"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Visualiser une dernière fois votre carte de voeux !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="044-fd-7QC">
                                 <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -687,15 +640,38 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-xd-guD">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J12-Ca-ZHq"/>
+                                    <constraint firstAttribute="width" constant="100" id="cyr-9r-Ah5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="Emz-2A-WOc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwn-lJ-rSC">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="1JN-bB-50P"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6CR-6b-8eG"/>
+                                    <constraint firstAttribute="height" constant="50" id="yfD-uc-rwi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continuer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hgC-ze-UPw" firstAttribute="leading" secondItem="hzo-Wr-beA" secondAttribute="trailing" constant="20" id="0Iu-CX-1oW"/>
-                            <constraint firstItem="ADn-XA-nrH" firstAttribute="bottom" secondItem="hgC-ze-UPw" secondAttribute="bottom" constant="20" id="DpQ-n4-amF"/>
-                            <constraint firstItem="ADn-XA-nrH" firstAttribute="bottom" secondItem="hzo-Wr-beA" secondAttribute="bottom" constant="20" id="KBM-Za-YPR"/>
                             <constraint firstItem="044-fd-7QC" firstAttribute="leading" secondItem="ADn-XA-nrH" secondAttribute="leading" constant="16" id="m8B-3i-rqa"/>
+                            <constraint firstItem="qwn-lJ-rSC" firstAttribute="leading" secondItem="Kf2-xd-guD" secondAttribute="trailing" constant="20" id="ql7-Em-ha8"/>
                             <constraint firstItem="044-fd-7QC" firstAttribute="top" secondItem="ADn-XA-nrH" secondAttribute="top" id="yG3-5C-7ae"/>
-                            <constraint firstItem="hzo-Wr-beA" firstAttribute="leading" secondItem="ADn-XA-nrH" secondAttribute="leading" constant="16" id="yz0-xI-TBe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ADn-XA-nrH"/>
                     </view>
@@ -712,32 +688,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dde-bJ-4vM">
-                                <rect key="frame" x="16" y="597" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="pIP-4z-0TB"/>
-                                    <constraint firstAttribute="height" constant="50" id="sDB-Tj-jPp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Retour"/>
-                                <connections>
-                                    <action selector="BackButton:" destination="JJS-xI-jJ2" eventType="touchUpInside" id="X1s-4O-TJh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNQ-X8-XUE">
-                                <rect key="frame" x="136" y="597" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="eEY-fT-4u0"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="eca-Hq-seh"/>
-                                    <constraint firstAttribute="height" constant="50" id="jss-9T-fi5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Payer et envoyer"/>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Finaliser l'envoi de votre mail !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0QX-7k-ECU">
                                 <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -748,15 +698,38 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFI-lc-99w">
+                                <rect key="frame" x="16" y="597" width="112" height="50"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NKb-Cy-4Up"/>
+                                    <constraint firstAttribute="height" constant="50" id="tCE-hB-lWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="l29-SD-vru" eventType="touchUpInside" id="AbA-lw-C14"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTF-Op-TjU">
+                                <rect key="frame" x="136" y="597" width="223" height="50"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.21176470589999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="Pcg-Aj-qKY"/>
+                                    <constraint firstAttribute="height" constant="50" id="VEl-za-Esm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vpW-jl-0Q6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continuer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lfy-I1-Cfb" firstAttribute="bottom" secondItem="dde-bJ-4vM" secondAttribute="bottom" constant="20" id="C9F-jQ-sM1"/>
-                            <constraint firstItem="cNQ-X8-XUE" firstAttribute="leading" secondItem="dde-bJ-4vM" secondAttribute="trailing" constant="20" id="JPH-Z5-zZR"/>
                             <constraint firstItem="0QX-7k-ECU" firstAttribute="leading" secondItem="lfy-I1-Cfb" secondAttribute="leading" constant="16" id="TWJ-aj-NfF"/>
-                            <constraint firstItem="dde-bJ-4vM" firstAttribute="leading" secondItem="lfy-I1-Cfb" secondAttribute="leading" constant="16" id="ZhP-O6-yED"/>
+                            <constraint firstItem="HTF-Op-TjU" firstAttribute="leading" secondItem="dFI-lc-99w" secondAttribute="trailing" constant="20" id="YE0-Py-eZ7"/>
                             <constraint firstItem="0QX-7k-ECU" firstAttribute="top" secondItem="lfy-I1-Cfb" secondAttribute="top" id="ciw-Ls-MHM"/>
-                            <constraint firstItem="lfy-I1-Cfb" firstAttribute="bottom" secondItem="cNQ-X8-XUE" secondAttribute="bottom" constant="20" id="xB1-RN-5jL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lfy-I1-Cfb"/>
                     </view>
