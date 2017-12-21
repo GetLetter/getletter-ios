@@ -3,4 +3,6 @@ use_frameworks!
 
 target 'getLetter' do
   pod 'Alamofire', '~> 4.5'
+  pod 'Gloss', '~> 2.0'
+  pod 'Firebase/Core'
 end

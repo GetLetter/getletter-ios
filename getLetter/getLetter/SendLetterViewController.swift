@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SendLetterViewController: UIViewController {
 
@@ -20,6 +21,16 @@ class SendLetterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func SendDataToFirabase(_ sender: Any) {
+        
+        let timestamp = NSDate().timeIntervalSince1970
+        Analytics.logEvent("NewLetter", parameters: [
+            "User_token": token,
+            "Date_time": timestamp as NSObject
+            ])
+    }
+    
     
 
     /*
