@@ -41,7 +41,8 @@ class LoginViewController: UIViewController {
                     return
                 }
                 token = repoOwner.auth_token
-                    print("FUCKIN TOKEN", repoOwner.auth_token)
+                
+                print("FUCKIN TOKEN", repoOwner.auth_token)
                 
             case .failure:
                 print("not good")
