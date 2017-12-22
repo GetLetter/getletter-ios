@@ -22,6 +22,7 @@ class SendLetterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: send data to firebase
     @IBAction func SendDataToFirabase(_ sender: Any) {
         
         let timestamp = NSDate().timeIntervalSince1970

@@ -11,6 +11,7 @@ import Alamofire
 
 class TemplateTableViewCell: UITableViewCell {
     
+    
     @IBOutlet weak var TemplateTablViewCellLabel: UILabel!
     @IBOutlet weak var TemplateTableViewCellImage: UIImageView!
 }
@@ -45,7 +46,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             switch response.result {
             case .success(let data):
-                print("data fruit", data)
+                print("data from the api", data)
             case .failure:
                 print("not good")
             }
@@ -60,21 +61,17 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "yolo \(section)"
+//        return "Section \(section)"
 //    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TemplateTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TemplateTableViewCell
+        
         print("cell", cell)
         
         let fruitName = fruits[indexPath.row]
-        cell.textLabel?.text = "trololo"
+        cell.textLabel?.text = "Bonjour ?"
         cell.imageView?.image = UIImage(named: fruitName)
-        
-//        let fruitName = fruits[indexPath.row]
-//        cell.textLabel?.text = fruitName
-//        cell.detailTextLabel?.text = "Delicious!"
-//        cell.imageView?.image = UIImage(named: fruitName)
         
         return cell
     }

@@ -16,8 +16,6 @@ class EditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var data = ""
-        
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(self.userDragged(_:)))
         bottomTextField.addGestureRecognizer(gesture)
         bottomTextField.isUserInteractionEnabled = true

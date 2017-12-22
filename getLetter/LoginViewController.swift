@@ -40,9 +40,11 @@ class LoginViewController: UIViewController {
                     // handle decoding failure here
                     return
                 }
+                
+                // global var token
                 token = repoOwner.auth_token
                 
-                print("FUCKIN TOKEN", repoOwner.auth_token)
+                print("TOKEN STRING", repoOwner.auth_token)
                 
             case .failure:
                 print("not good")
@@ -56,25 +58,14 @@ class LoginViewController: UIViewController {
         getToken() { response in
             token = response
             self.performSegue(withIdentifier: "loginSuccess", sender:self)
-            print("token", response)
         }
-        print("view did load")
-        // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    let headers: HTTPHeaders = [
-//        "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
-//        "Accept": "application/json"
-//    ]
-//
-//    Alamofire.request("https://httpbin.org/headers", headers: headers).responseJSON { response in
-//    debugPrint(response)
-//    }
     
     
     // MARK: - Navigation

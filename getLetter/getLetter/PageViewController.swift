@@ -21,7 +21,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         // the last view controller.
         guard previousIndex >= 0 else {
             // return orderedViewControllers.last
-            // Uncommment the line below, remove the line above if you don't want the page control to loop.
+            // Uncommment the line above and comment the line below if you want the page control to loop.
             return nil
         }
         
@@ -44,7 +44,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         // the first view controller.
         guard orderedViewControllersCount != nextIndex else {
             // return orderedViewControllers.first
-            // Uncommment the line below, remove the line above if you don't want the page control to loop.
+            // Uncommment the line above and comment the line below if you want the page control to loop.
             return nil
         }
         
@@ -59,6 +59,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
     
+    // add another controller to add a new page
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "GreenView"),
                 self.newVc(viewController: "RedView"),
@@ -69,10 +70,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     var pageControl = UIPageControl()
     
     func configurePageControl() {
-        // The total number of pages that are available is based on how many available colors we have.
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
         self.pageControl.numberOfPages = orderedViewControllers.count
         self.pageControl.currentPage = 0
+        // Configuration button on the bottom of the page
         self.pageControl.tintColor = UIColor.black
         self.pageControl.pageIndicatorTintColor = UIColor.gray
         self.pageControl.currentPageIndicatorTintColor = UIColor.black
@@ -89,8 +90,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         super.viewDidLoad()
         self.dataSource = self
         
-        print(token)
-        
         // This sets up the first view that will show up on our page control
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
@@ -100,8 +99,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         }
         self.delegate = self
         configurePageControl()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
