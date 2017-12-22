@@ -658,11 +658,6 @@
                                     <outletCollection property="gestureRecognizers" destination="85u-rY-lVF" appends="YES" id="amc-z4-cMe"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBf-Rh-yY3">
-                                <rect key="frame" x="277" y="110" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMm-wX-LEp">
                                 <rect key="frame" x="16" y="597" width="100" height="50"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -740,8 +735,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Visualisez une dernière fois votre carte de voeux !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="044-fd-7QC">
-                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Visualisez une dernière fois votre carte de voeux !" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="044-fd-7QC">
+                                <rect key="frame" x="16" y="20" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="syK-BJ-69w"/>
                                     <constraint firstAttribute="width" constant="240" id="ywg-wZ-LmT"/>
@@ -783,14 +778,25 @@
                                 <rect key="frame" x="16" y="567" width="343" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-card" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-40-XFd">
+                                <rect key="frame" x="30" y="156" width="315" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="TnL-nM-ry9"/>
+                                    <constraint firstAttribute="height" constant="320" id="VWu-I6-ZDV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xJf-40-XFd" firstAttribute="top" secondItem="044-fd-7QC" secondAttribute="bottom" constant="8" id="6Sg-S0-eQQ"/>
+                            <constraint firstItem="xJf-40-XFd" firstAttribute="leading" secondItem="ADn-XA-nrH" secondAttribute="leading" constant="30" id="7gp-Ow-ohw"/>
+                            <constraint firstItem="ADn-XA-nrH" firstAttribute="trailing" secondItem="xJf-40-XFd" secondAttribute="trailing" constant="30" id="ARg-4p-DQ5"/>
                             <constraint firstItem="ADn-XA-nrH" firstAttribute="bottom" secondItem="Kf2-xd-guD" secondAttribute="bottom" constant="20" id="J4r-XM-PGz"/>
                             <constraint firstItem="ADn-XA-nrH" firstAttribute="bottom" secondItem="qwn-lJ-rSC" secondAttribute="bottom" constant="20" id="UJh-LG-9YQ"/>
                             <constraint firstItem="Kf2-xd-guD" firstAttribute="leading" secondItem="ADn-XA-nrH" secondAttribute="leading" constant="16" id="Y4s-dw-NM2"/>
                             <constraint firstItem="044-fd-7QC" firstAttribute="leading" secondItem="ADn-XA-nrH" secondAttribute="leading" constant="16" id="m8B-3i-rqa"/>
                             <constraint firstItem="qwn-lJ-rSC" firstAttribute="leading" secondItem="Kf2-xd-guD" secondAttribute="trailing" constant="20" id="ql7-Em-ha8"/>
+                            <constraint firstItem="ADn-XA-nrH" firstAttribute="trailing" secondItem="xJf-40-XFd" secondAttribute="trailing" constant="30" id="rXp-U7-PwT"/>
                             <constraint firstItem="044-fd-7QC" firstAttribute="top" secondItem="ADn-XA-nrH" secondAttribute="top" id="yG3-5C-7ae"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ADn-XA-nrH"/>
@@ -1044,5 +1050,6 @@
         <image name="Timeline4" width="492" height="39"/>
         <image name="Timeline5" width="492" height="39"/>
         <image name="Timeline6" width="501" height="39"/>
+        <image name="example-card" width="472" height="480"/>
     </resources>
 </document>
